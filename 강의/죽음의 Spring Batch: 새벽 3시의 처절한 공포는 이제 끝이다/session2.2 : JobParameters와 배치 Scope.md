@@ -23,7 +23,7 @@ Batch 실행 방식에 따라 JobParamter를 전달하는 방법은 크게 `커�
 ```shell
 ./gradlew bootRun --args='--spring.batch.job.name=dataProcessingJob inputFilePath=/data/input/users.csv,java.lang.String'
 ```
-> `--`로 시작하는 Spring Boot 파라미터와 Spring Batch 잡 파라미터를 구분하라
+> `--`로 시작하는 Spring Boot 파라미터와 Spring Batch 잡 파라미터를 구분하라  
 > `--spring.batch.job.name=dataProcessingJob`은 실행할 Job 이름을 지정하는 Spring Boot 아규먼트이며, 그 뒤에 key=value,type들은 실제 Job에 주입되는 Spring Batch JobPrameters이다.
 </br>
 
